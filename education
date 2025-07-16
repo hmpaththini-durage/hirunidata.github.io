@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hiruni | Education</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .education {
+      background: #fff;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .education h3 {
+      margin-top: 0;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #3498db;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #2c3e50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hiruni Malsha</h1>
+    <p>Education & Academic Achievements</p>
+  </header>
+
+  <div class="container">
+    <div class="education">
+      <h3>Graduate Certificate of Business Information Technology</h3>
+      <p>Seneca College, Markham, Ontario<br>
+      Jan 2024 - Present (Expected completion: Aug 2025)</p>
+    </div>
+
+    <div class="education">
+      <h3>Master of Data Analytics</h3>
+      <p>University of Kelaniya - Faculty of Graduate Studies, Sri Lanka<br>
+      Mar 2022 - Nov 2023</p>
+    </div>
+
+    <div class="education">
+      <h3>Bachelor’s Degree in Software Engineering</h3>
+      <p>Plymouth University, UK (Affiliated with NSBM, Sri Lanka)<br>
+      Mar 2018 - July 2021</p>
+    </div>
+
+    <a class="back-link" href="index.html">&larr; Back to Portfolio</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Hiruni Malsha | Built with ❤️ and GitHub Pages
+  </footer>
+</body>
+</html>
