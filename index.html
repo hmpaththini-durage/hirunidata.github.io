@@ -11,18 +11,49 @@
       padding: 0;
       background: #f4f4f4;
       color: #333;
+      display: flex;
     }
+    .sidebar {
+      width: 250px;
+      background: #2c3e50;
+      color: white;
+      padding: 2rem 1rem;
+      position: fixed;
+      height: 100vh;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin-bottom: 1rem;
+    }
+    .sidebar ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+    }
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .main-content {
+      margin-left: 270px;
+      padding: 2rem;
+      width: 100%;
+    }
+
     header {
       background: #2c3e50;
       color: #fff;
       padding: 2rem;
       text-align: center;
     }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
+
     .project {
       background: #fff;
       margin-bottom: 2rem;
@@ -30,32 +61,47 @@
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
     .project h3 {
       margin-top: 0;
     }
-    .project p {
-      margin: 0.5rem 0 1rem;
-    }
+
     .project a {
       color: #3498db;
       text-decoration: none;
     }
+
     footer {
       text-align: center;
       padding: 2rem;
       background: #2c3e50;
       color: white;
+      margin-top: 2rem;
     }
+
   </style>
 </head>
 <body>
-  <header>
-    <h1>Hiruni Malsha</h1>
-    <p>Data Analyst | Turning Data into Insights</p>
-  </header>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>📂 Projects</h2>
+    <ul>
+      <li><a href="index.html">🏠 Dashboards (Home)</a></li>
+      <li><a href="https://github.com/hmpaththini-durage/sales-dashboard" target="_blank">Sales Dashboard</a></li>
+      <li><a href="https://github.com/hmpaththini-durage/covid-analysis" target="_blank">COVID-19 Analysis</a></li>
+      <li><a href="https://github.com/hmpaththini-durage/sql-challenge" target="_blank">SQL Query Challenge</a></li>
+      <li><a href="education.html">🎓 Education & Work</a></li>
+    </ul>
+  </div>
 
-  <div class="container">
-    <h2>📊 My Projects</h2>
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <h1>Hiruni Malsha</h1>
+      <p>Data Analyst | Power BI Dashboard Specialist</p>
+    </header>
+
+    <h2>📊 Dashboards</h2>
 
     <div class="project">
       <h3>Sales Dashboard (Power BI)</h3>
@@ -63,31 +109,15 @@
       <a href="https://github.com/hmpaththini-durage/sales-dashboard" target="_blank">View on GitHub</a>
     </div>
 
-    <div class="project">
-      <h3>COVID-19 Data Analysis (Python)</h3>
-      <p>Used Pandas and Matplotlib to analyze global COVID-19 trends, daily new cases, and correlation with policy response.</p>
-      <a href="https://github.com/hmpaththini-durage/covid-analysis" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>SQL Query Challenge</h3>
-      <p>Solved 15+ complex business questions using joins, CTEs, window functions, and subqueries in PostgreSQL.</p>
-      <a href="https://github.com/hmpaththini-durage/sql-challenge" target="_blank">View on GitHub</a>
-    </div>
-
     <h2>📫 Contact</h2>
-    <p>Email: <a href="mailto:pdhmalsha@gmail.com">your.email@example.com</a></p>
+    <p>Email: <a href="mailto:pdhmalsha@gmail.com">pdhmalsha@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/hiruni-malsha789" target="_blank">hiruni-malsha789</a></p>
     <p>GitHub: <a href="https://github.com/hmpaththini-durage" target="_blank">hmpaththini-durage</a></p>
-    <p>Location: North York, ON, Canada (Optional)</p>
+    <p>Location: North York, ON, Canada</p>
 
-
-    <h2>🎓 Education & Experience</h2>
-    <p><a href="education.html">View My Educational & Work Achievements</a></p>
+    <footer>
+      &copy; 2025 Hiruni Malsha | Built with ❤️ and GitHub Pages
+    </footer>
   </div>
-
-  <footer>
-    &copy; 2025 Hiruni Malsha | Built with ❤️ and GitHub Pages
-  </footer>
 </body>
 </html>
