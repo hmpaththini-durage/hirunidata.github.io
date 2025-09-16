@@ -13,6 +13,7 @@
       color: #333;
       display: flex;
     }
+    /* Sidebar */
     .sidebar {
       width: 250px;
       background: #2c3e50;
@@ -36,11 +37,13 @@
     .sidebar ul li a {
       color: #ecf0f1;
       text-decoration: none;
+      font-size: 1.1rem;
     }
     .sidebar ul li a:hover {
       text-decoration: underline;
     }
 
+    /* Main Content */
     .main-content {
       margin-left: 270px;
       padding: 2rem;
@@ -52,23 +55,42 @@
       color: #fff;
       padding: 2rem;
       text-align: center;
+      border-radius: 10px;
     }
 
-    .project {
+    h2 {
+      margin-top: 2rem;
+    }
+
+    /* Project Category Cards */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .category-card {
       background: #fff;
-      margin-bottom: 2rem;
-      padding: 1.5rem;
+      padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
     }
 
-    .project h3 {
-      margin-top: 0;
+    .category-card:hover {
+      transform: translateY(-5px);
     }
 
-    .project a {
-      color: #3498db;
+    .category-card h3 {
+      margin: 0.5rem 0;
+    }
+
+    .category-card a {
       text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
     }
 
     footer {
@@ -77,20 +99,19 @@
       background: #2c3e50;
       color: white;
       margin-top: 2rem;
+      border-radius: 10px;
     }
-
   </style>
 </head>
 <body>
   <!-- Sidebar -->
   <div class="sidebar">
-    <h2>📂 Projects</h2>
+    <h2>📂 Portfolio</h2>
     <ul>
-      <li><a href="index.html">🏠 Dashboards (Home)</a></li>
-      <li><a href="https://github.com/hmpaththini-durage/sales-dashboard" target="_blank">Sales Dashboard</a></li>
-      <li><a href="https://github.com/hmpaththini-durage/covid-analysis" target="_blank">COVID-19 Analysis</a></li>
-      <li><a href="https://github.com/hmpaththini-durage/sql-challenge" target="_blank">SQL Query Challenge</a></li>
+      <li><a href="index.html">🏠 Home</a></li>
       <li><a href="education.html">🎓 Education & Work</a></li>
+      <li><a href="profile.html">👩‍💻 Profile</a></li>
+      <li><a href="contact.html">📫 Contact</a></li>
     </ul>
   </div>
 
@@ -98,22 +119,33 @@
   <div class="main-content">
     <header>
       <h1>Hiruni Malsha</h1>
-      <p>Data Analyst | Power BI Dashboard Specialist</p>
+      <p>Data Analyst</p>
     </header>
 
-    <h2>📊 Dashboards</h2>
+    <h2>📊 Project Categories</h2>
 
-    <div class="project">
-      <h3>Sales Dashboard (Power BI)</h3>
-      <p>A professional dashboard analyzing regional and product-level sales KPIs with slicers and drill-down features.</p>
-      <a href="https://github.com/hmpaththini-durage/sales-dashboard" target="_blank">View on GitHub</a>
+    <div class="categories">
+      <div class="category-card">
+        <h3>SQL Projects</h3>
+        <a href="sql-projects.html">View Projects →</a>
+      </div>
+      <div class="category-card">
+        <h3>Excel Projects</h3>
+        <a href="excel-projects.html">View Projects →</a>
+      </div>
+      <div class="category-card">
+        <h3>Power BI Projects</h3>
+        <a href="powerbi-projects.html">View Projects →</a>
+      </div>
+      <div class="category-card">
+        <h3>Tableau Projects</h3>
+        <a href="tableau-projects.html">View Projects →</a>
+      </div>
+      <div class="category-card">
+        <h3>Python Projects</h3>
+        <a href="python-projects.html">View Projects →</a>
+      </div>
     </div>
-
-    <h2>📫 Contact</h2>
-    <p>Email: <a href="mailto:pdhmalsha@gmail.com">pdhmalsha@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hiruni-malsha789" target="_blank">hiruni-malsha789</a></p>
-    <p>GitHub: <a href="https://github.com/hmpaththini-durage" target="_blank">hmpaththini-durage</a></p>
-    <p>Location: North York, ON, Canada</p>
 
     <footer>
       &copy; 2025 Hiruni Malsha | Built with ❤️ and GitHub Pages
