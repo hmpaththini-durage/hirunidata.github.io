@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SQL Projects | Hiruni Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+      display: flex;
+    }
+    .sidebar {
+      width: 250px;
+      background: #2c3e50;
+      color: white;
+      padding: 2rem 1rem;
+      position: fixed;
+      height: 100vh;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin-bottom: 1rem;
+    }
+    .sidebar ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .main-content {
+      margin-left: 270px;
+      padding: 2rem;
+      width: 100%;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .project {
+      background: #fff;
+      margin: 2rem 0;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project h2 {
+      margin-top: 0;
+    }
+
+    .project ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .project ul li::before {
+      content: "✅ ";
+    }
+
+    .project a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>📂 Portfolio</h2>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="education.html">🎓 Education & Work</a></li>
+      <li><a href="profile.html">👩‍💻 Profile</a></li>
+      <li><a href="contact.html">📫 Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <h1>SQL Projects</h1>
+      <p>Exploring SQL Server for real-world analytics</p>
+    </header>
+
+    <div class="project">
+      <h2>Toronto Retail Analytics (SQL Server)</h2>
+      <p>
+        Excited to share my new SQL Analytics Project – <strong>Toronto Retail</strong>! I worked on building a retail analytics project in SQL Server, focusing on real-world business use cases.
+      </p>
+      <h3>Key Analyses:</h3>
+      <ul>
+        <li>Customer Insights – Number of orders per customer & total revenue by customer</li>
+        <li>Revenue Analysis – Monthly revenue trends & Year-over-Year (YoY) growth using LAG()</li>
+        <li>Product Performance – Top products by revenue and units sold in the last 90 days</li>
+        <li>Marketing Impact – Campaign lift analysis to evaluate ROI</li>
+        <li>Customer Segmentation – RFM (Recency, Frequency, Monetary) scoring model</li>
+      </ul>
+
+      <h3>Skills Strengthened:</h3>
+      <ul>
+        <li>SQL Server (CTEs, window functions, aggregations)</li>
+        <li>Data-driven storytelling through queries</li>
+        <li>Translating business questions into analytical solutions</li>
+      </ul>
+
+      <p>🔗 <a href="https://lnkd.in/g6EpZB7P" target="_blank">View Project on GitHub</a></p>
+
+      <p>
+        I plan to extend this project with more advanced analytics such as cohort analysis and churn prediction setup – stay tuned!
+      </p>
+    </div>
+
+    <footer>
+      &copy; 2025 Hiruni Malsha | SQL Portfolio
+    </footer>
+  </div>
+</body>
+</html>
